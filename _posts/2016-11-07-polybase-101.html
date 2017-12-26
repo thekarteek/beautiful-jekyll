@@ -1,0 +1,14 @@
+---
+layout: post
+title: Polybase 101
+date: '2016-11-07T19:04:00.000-08:00'
+author: Karteek Yadavilli
+tags:
+- Polybase
+- Data Analysis
+modified_time: '2016-11-07T19:04:02.886-08:00'
+blogger_id: tag:blogger.com,1999:blog-8004810643159823472.post-5405813569907825218
+blogger_orig_url: http://www.akyadavilli.xyz/2016/11/polybase-101.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">PolyBase is a technology that accesses and combines both non-relational and relational data, all from within SQL Server. It allows you to run queries on external data in Hadoop or Azure blob storage. The queries are optimized to push computation to Hadoop.<br /><br />Polybase has been built to address four major usecases -<br />a) To allow corporates to reuse their current Data Analysts with SQL skills to access data on Hadoop using T-SQL<br />b) To provide capability for analysis to be be done on distributed datasets split between SQL Server and Hadoop without moving data around<br />c) To let all the current ETL/Reporting tools leverage native OLEDB drivers to connect to datasets on Hadoop.<br />d) To build Hybrid Data warehouse wherein all cold data is archived away to Hadoop whilst still being accessible for querying thereby reducing the cost of maintaining larger datasets.<br /><br />Polybase achieves this by providing capability to create external table structures on top of data stored in HDFS. Thus, it provides capability to write T-SQL statements on these external tables and joining them with other tables (external/conventional) to write all forms of queries.<br /><br />For further details on Polybase, please watch out for my next posts on this subject.</div>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: The CAP Theorem
+date: '2016-10-07T15:42:00.001-07:00'
+author: Karteek Yadavilli
+tags:
+- Distributed Systems
+modified_time: '2016-11-07T18:46:53.458-08:00'
+blogger_id: tag:blogger.com,1999:blog-8004810643159823472.post-6115392142528865456
+blogger_orig_url: http://www.akyadavilli.xyz/2016/10/the-cap-theorem.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">This theorem suggests that any distributed system built, it is possible to simultaneously provide the only two of the following&nbsp;three assurances -<br />a) Consistency - Commits are atomic across the entire distributed system. Every read provides the most recent write or an error.<br />b) Availability - The system remains accessible and operational at all times. Every request receives a response regardless of whether it is the most recent information or not.<br />c) Partition Tolerance - The system continues to operate despite arbitrary partitioning due to network failures. It takes a complete network failure to cause system to respond incorrectly.<br /><br />ACID and BASE represent two design philosophies at opposite ends of the consistency-availability spectrum. The ACID properties focus on consistency and are the traditional approach of databases. BASE was&nbsp;created&nbsp;in the late 1990s to capture the emerging design approaches for high availability and to make explicit both the choice and the spectrum. Modern large-scale wide-area systems, including the cloud, use a mix of both approaches. BASE stands for <b>B</b>asically <b>A</b>vailable, <b>S</b>oft state, <b>E</b>ventually consistent. &nbsp;Soft state and eventual consistency are techniques that work well in the presence of partitions and thus promote availability.<br /><br />I am of an opinion that beating the CAP theorem is to adopt to Eventual consistency and focus on Availability and partition tolerance.</div>
